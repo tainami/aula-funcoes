@@ -16,7 +16,7 @@ const outraFuncao = function(texto) {
 
 const resposta = outraFuncao(textoDoUsuario)
 console.log(resposta)
-// A função vai pegar o texto que o usuário inseriu, retorna-lo com letras minúsculas e verificar se contém a palavra "cenoura".
+// A função vai pegar o texto que o usuário inseriu, transforma o texto em letras minúsculas e verificar se contém a palavra "cenoura".
 console.log(outraFuncao("Eu gosto de cenoura")) // true
 console.log(outraFuncao("CENOURA é bom pra vista")) // true
 console.log(outraFuncao("Cenouras crescem na terra")) // true
@@ -61,10 +61,10 @@ imprimeInformacoes()
 	console.log(tamanhoFrase("Brilha estrelinha"))
 
 // Exercício 5
-const soma = (a, b) => {return "Soma: " + a + b}
-const subtracao = (a, b) => {return "Subtração: " + a - b}
-const multiplicacao = (a, b) => {return "Multiplicação: " + a * b}
-const divisao = (a, b) => {return "Divisão: " + a / b}
+const soma = (a, b) => {return "Soma: " + (a + b)}
+const subtracao = (a, b) => {return "Subtração: " + (a - b)}
+const multiplicacao = (a, b) => {return "Multiplicação: " + (a * b)}
+const divisao = (a, b) => {return "Divisão: " + (a / b)}
 
 function imprimeOperacoes() {
 	const primeiroNumero = Number(prompt("Digite o primeiro número"))
@@ -75,4 +75,3 @@ function imprimeOperacoes() {
 	console.log(divisao(primeiroNumero, segundoNumero))
 }
 imprimeOperacoes()
-

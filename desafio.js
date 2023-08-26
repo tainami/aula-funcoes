@@ -5,13 +5,12 @@ Faça a soma entre esses valores e chame a sua primeira função mandando este r
 da soma como entrada para imprimi-lo
 */
 let primeiraFuncao = (parametro) => {
-    return parametro
+    console.log(parametro)
 }
 
 let segundaFuncao = (primeiroValor, segundoValor) => {
     let resultadoSoma = primeiroValor + segundoValor
-    let resultado = primeiraFuncao(resultadoSoma)
-    console.log(resultado)
+    primeiraFuncao(resultadoSoma)
 }
 segundaFuncao(2, 3)
 
